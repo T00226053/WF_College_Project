@@ -1,9 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-const ctrlMain = require('../controllers/main');
+const ctrlHome = require('../controllers/home');
+const ctrlOthers = require('../controllers/others');
 
-/* GET home page. */
-router.get('/', ctrlMain.index);
+/* Home page */
+router.get('/', ctrlHome.homeMenu);
 
+/* Other pages */
+router.get('/about', ctrlOthers.about);
 module.exports = router;

@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('wf-project:server');
+var debug = require('debug')('wf-college-project:server');
 var http = require('http');
 
 /**
