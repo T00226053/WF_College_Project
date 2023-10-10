@@ -1,19 +1,20 @@
 extends layout
 
 block content
-	.row.banner
-		.col-12
-			h1= title
-	.row
-		.col-12.col-lg-8
-			p
-				| Enter your information to book a class.
-				br
-				br
-				br
-			form
-				label Enter your ID:
-				br
-				input#id(type='text', name='id')
-				br
-				br
+	div.backColour
+		.row.banner
+			.col-12
+				h1= title
+		.row
+			.col-12.col-lg-8
+				p
+					| Enter your information to book a class.
+					br
+					br
+					br
+				form
+					label Enter your ID:
+					br
+					input#id(type='text', name='id')
+					br
+					br

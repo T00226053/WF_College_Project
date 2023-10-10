@@ -1,19 +1,42 @@
 extends layout
 
 block content
-	.row.banner
-		.col-12
-			h1= title
-	.row
-		.col-12.col-lg-8
-			p
-				| Enter your information to view a class you have booked.
-				br
-				br
-				br
-			form
-				label Enter your ID:
-				br
-				input#id(type='text', name='id')
-				br
-				br
+	div.backColour
+		.row.banner
+			.col-12
+				h1= title
+		.row
+			.col-12.col-lg-8
+				p
+					| Enter your information to view a class you have booked.
+					br
+					br
+					br
+				form
+					label Enter your Member ID:
+					br
+					input#id(type='text', name='id')
+					br
+					br
+				table
+					tr
+						th Member ID
+						th Member Name
+						th Class Name
+						th Class Length(hours)
+						th Date
+						th Time
+					tr
+						th 1
+						th Liam
+						th Yoga
+						th 1
+						th 01/01/2000
+						th 12:00
+					tr
+						th #{viewBooking.id}
+						th #{viewBooking.memberName}
+						th #{viewBooking.className}
+						th #{viewBooking.classLength}
+						th #{viewBooking.date}
+						th #{viewBooking.time}
