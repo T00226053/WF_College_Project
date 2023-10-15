@@ -1,5 +1,5 @@
 .navbar-inverse {
-	background-color: #33B1FF;
+	background-color: #DF4C2D;
 }
 .navbar-inverse .navbar-brand{
 	padding-left: 0px;
@@ -15,19 +15,11 @@
 	padding: 0.5em;
 	background-color: #808080;
 }
-a{
-  color: #000000;
-}
 
 body{
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #6d18db;
-}
-table{
-	border: 1px solid #000000;
-	border-collapse: collapse;
-	width: 100%;
+  background-color: #C0C0C0;
 }
 th, td{
 	border: 1px solid #000000;
@@ -39,7 +31,19 @@ th, td{
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	padding-bottom: 1em;
-	background-color: #33B1FF;
+	background-color: #DF4C2D;
+}
+.custab{
+    border: 1px solid #C0C0C0;
+    padding: 5px;
+    margin: 5% 0;
+    box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+	background-color: #C0C0C0
+}
+.custab:hover{
+    box-shadow: 3px 3px 2px #FFF;
+    transition: 0.5s;
 }
 
 footer{

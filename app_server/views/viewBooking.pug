@@ -20,7 +20,7 @@ block content
 					br
 					br
 					
-				table
+				table.custab
 					tr
 						th Member ID
 						th Member Name
@@ -36,9 +36,16 @@ block content
 						th 01/01/2000
 						th 12:00
 					tr
-						th #{rows.id}
-						th #{rows.memberName}
-						th #{rows.className}
-						th #{rows.classLength}
-						th #{rows.date}
-						th #{rows.time}
+						th= +bookings.id
+						th= +bookings.memberName
+						th= +bookings.className
+						th= +bookings.classLength
+						th= +bookings.date
+						th= +bookings.time
+					tr
+						th 3
+						th Mike
+						th Jumping Jacks
+						th 0.5
+						th 14/10/23
+						th 13:00
