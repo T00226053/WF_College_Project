@@ -29,23 +29,17 @@ block content
 						th Date
 						th Time
 					tr
-						th 1
-						th Liam
-						th Yoga
-						th 1
-						th 01/01/2000
-						th 12:00
-					tr
-						th= +bookings.id
-						th= +bookings.memberName
-						th= +bookings.className
-						th= +bookings.classLength
-						th= +bookings.date
-						th= +bookings.time
-					tr
-						th 3
-						th Mike
-						th Jumping Jacks
-						th 0.5
-						th 14/10/23
-						th 13:00
+						td 1
+						td Liam
+						td Yoga
+						td 1
+						td 01/01/2000
+						td 12:00
+					each booking in bookings
+						tr
+							td #{booking.id}
+							td #{booking.memberName}
+							td #{booking.className}
+							td #{booking.classLength}
+							td #{booking.date}
+							td #{booking.time}
