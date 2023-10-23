@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	div.backColour
+		h1= title
+		p Enter your information below to register an account with our system.
+		
+		form
+			label Name:
+			br
+			input#name(type='text', name='name')
+			br
+			br
+			label Email:
+			br
+			input#email(type='text', name='email')
+			br
+			br
+			label Password:
+			br
+			input#password(type='password', name='password')
+			
