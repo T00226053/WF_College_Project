@@ -2,7 +2,7 @@
 	background-color: #DF4C2D;
 }
 .navbar-inverse .navbar-brand{
-	padding-left: 0px;
+	padding-left: 25px;
 	padding-right: 2em;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -19,13 +19,16 @@
 }
 
 body{
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #C0C0C0;
+	padding: 30px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color: #C0C0C0;
 }
 th, td{
 	border: 1px solid #000000;
 	text-align: center;
+}
+.container{
+	padding: 0px;
 }
 .backColour{
 	border: 1px solid #000000;
@@ -35,6 +38,51 @@ th, td{
 	padding-bottom: 1em;
 	background-color: #DF4C2D;
 }
+
+/*https://bootsnipp.com/snippets/z1Bpy*/
+.panel{
+	padding:0px;
+}
+.panel-register {
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-register input[type="text"],.panel-register input[type="email"],.panel-register input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-register input:hover,
+.panel-register input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-register {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}
+
 /*https://bootsnipp.com/snippets/Pjo1*/
 .custab{
 	width: 100%;

@@ -5,18 +5,22 @@ block content
 		h1= title
 		p Enter your information below to register an account with our system.
 		
-		form
-			label Name:
-			br
-			input#name(type='text', name='name')
-			br
-			br
-			label Email:
-			br
-			input#email(type='text', name='email')
-			br
-			br
-			label Password:
-			br
-			input#password(type='password', name='password')
-			
+		// https://bootsnipp.com/snippets/z1Bpy
+		.container
+			.row
+				.panel.panel-register
+					.panel-body
+						.row
+							.col-md-8.col-md-4
+								form#register-form(action='', method='post', role='form', style='display: block;')
+									.form-group
+										input#username.form-control(type='text', name='name', tabindex='1', placeholder='Name', value='')
+									.form-group
+										input#email.form-control(type='email', name='email', tabindex='2', placeholder='Email Address')
+									.form-group
+										input#password.form-control(type='password', name='password', tabindex='3', placeholder='Password')
+									.form-group
+										.row
+											.col-sm-6.col-sm-offset-3
+												input#register-submit.form-control.btn.btn-register(type='submit', name='regbtn', tabindex='4', value='Register')
+									
