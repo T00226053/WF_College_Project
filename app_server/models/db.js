@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dbURL = "mongodb+srv://liamocc2003:*@cluster0.xbi7mys.mongodb.net/?retryWrites=true&w=majority";
+const dbURL = "mongodb+srv://liamocc2003:Ballymac03@cluster0.xbi7mys.mongodb.net/Loc8r";
 
 try{
 	mongoose.connect(
