@@ -22,16 +22,16 @@ const bookingSchema = new mongoose.Schema({
 		max: 3
 	},
 	
-	date: {
-		type: Date,
+	classDate: {
+		type: String,
 		required: true
 	},
 	
-	time: {
+	classTime: {
 		type: Number,
 		required: true,
 		min: 6,
 		max: 17,
-	},
+	}
 });
 mongoose.model('Booking', bookingSchema);
